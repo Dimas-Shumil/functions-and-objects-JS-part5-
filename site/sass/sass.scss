@@ -3,6 +3,7 @@
 $blue: #23419f;
 $green: #178253;
 $lightGreen:#B5E91633;
+$lightBlue:#EFEFFE;
 $teal: #006daa;
 $red: #c32d3a;
 $yellow: #ffd900;
@@ -99,14 +100,38 @@ blockquote {
             background-color: $lightGreen;
             margin-bottom: 30px;
         }
+        &-box_pink {
+            width: 90%;
+            border: 1px solid grey;
+            border-radius: 8px;
+            background-color: $brand;
+            margin-bottom: 30px;
+            color: $white;
+        }
         &-box_blue {
+            width: 90%;
+            border: 1px solid blue;
+            border-radius: 8px;
+            background-color:$lightBlue;
+            margin-bottom: 30px;
+            color: $dark;
+
+            li { 
+                list-style: none;
+                padding: 5px 15px;
+            }
+        }
+        &-box_lightBlue {
             width: 90%;
             border: 1px solid blue;
             border-radius: 8px;
             background-color: $accent-a;
             margin-bottom: 30px;
-            color: $white;
+            color: $white;  
         }
+    &-span_green {
+        color:$green ;
+    }
 
         &-conteiner {
             width: 80%;

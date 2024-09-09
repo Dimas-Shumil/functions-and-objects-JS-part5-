@@ -141,13 +141,36 @@ blockquote {
   background-color: rgba(181, 233, 22, 0.2);
   margin-bottom: 30px;
 }
+.main__wrapper-box_pink {
+  width: 90%;
+  border: 1px solid grey;
+  border-radius: 8px;
+  background-color: #9d0054;
+  margin-bottom: 30px;
+  color: #fff;
+}
 .main__wrapper-box_blue {
+  width: 90%;
+  border: 1px solid blue;
+  border-radius: 8px;
+  background-color: #EFEFFE;
+  margin-bottom: 30px;
+  color: #273f2f;
+}
+.main__wrapper-box_blue li {
+  list-style: none;
+  padding: 5px 15px;
+}
+.main__wrapper-box_lightBlue {
   width: 90%;
   border: 1px solid blue;
   border-radius: 8px;
   background-color: #00bbf9;
   margin-bottom: 30px;
   color: #fff;
+}
+.main__wrapper-span_green {
+  color: #178253;
 }
 .main__wrapper-conteiner {
   width: 80%;
