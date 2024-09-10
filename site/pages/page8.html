@@ -13,7 +13,7 @@
         <nav class="header__nav">
 
             <div class="header__nav-title">
-                8. Функции в ES6
+                8. Заключение
             </div>
 
             <ul class="header__nav-ul">
@@ -37,9 +37,103 @@
 
             <div class="main__wrapper-conteiner">
 
-                <figure>
-                    <img src="../images/m11_cover_arrow.svg" width="50%" alt="">
-                </figure>
+                <p>Функции — один из самых важных и мощных инструментов в JavaScript. Они позволяют создавать модульный
+                    и переиспользуемый код, улучшать читаемость и облегчать его тестирование.</p>
+                <p>JavaScript предоставляет множество способов объявления и использования функций. Например,
+                    функции-объекты, анонимные функции, стрелочные функции, функции высшего порядка и замыкания.</p>
+                <p>А знание областей видимости, контекста вызова и способов передачи параметров функции критически важно
+                    для создания и использования функций в JavaScript.</p>
+                <p>Понимание всех этих аспектов поможет вам создавать эффективный и масштабируемый код на JavaScript.
+                </p>
+
+                <h2>Задание 8.1</h2>
+
+                <p>Напишите функцию, которая принимает массив чисел в качестве аргумента и возвращает наибольшее число в
+                    массиве.</p>
+                <p>Пример использования:</p>
+
+                <div class="main__wrapper-box_grey">
+                    <p>const numbers = [3, 5, 1, 8, 2];</p>
+                    <p>const result = findMax(numbers);</p>
+                    <p>console.log(result); // 8</p>
+                </div>
+                <blockquote>Посмотреть код</blockquote>
+                <blockquote>
+                    <div class="main__wrapper-box_grey">
+                        <p>const findMax = function (numbers) {</p>
+                        <blockquote>let max = numbers[0];</blockquote>
+                        <blockquote>for (let i = 1; i &lsaquo; numbers.length; i++) {</blockquote>
+                        <blockquote>
+                            <blockquote>if (numbers[i] > max) {</blockquote>
+                        </blockquote>
+                        <blockquote>
+                            <blockquote>
+                                <blockquote>max = numbers[i];</blockquote>
+                            </blockquote>
+                        </blockquote>
+                        <blockquote>
+                            <blockquote>}</blockquote>
+                        </blockquote>
+                        <blockquote>}</blockquote>
+                        <blockquote>return max;</blockquote>
+                        <p>};</p>
+                    </div>
+                </blockquote>
+                <hr class="hr">
+
+                <h2>Задание 8.2</h2>
+
+                <p>Напишите функцию, которая принимает строку в качестве аргумента и возвращает новую строку с
+                    удалёнными гласными.</p>
+                <p>Пример использования:</p>
+
+                <div class="main__wrapper-box_grey">
+                    <p>const input = 'Hello, world!';</p>
+                    <p>const result = removeVowels(input);</p>
+                    <p>console.log(result); // "Hll, wrld!"</p>
+                </div>
+                <blockquote>Посмотреть код</blockquote>
+                <blockquote>
+                    <div class="main__wrapper-box_grey">
+                        <p>const removeVowels = function (str) {</p>
+                        <blockquote>eturn str.replace(/[aeiou]/gi, '');</blockquote>
+                        <p>};</p>
+                    </div>
+                </blockquote>
+                <hr class="hr">
+
+                <h2>Задание 8.3</h2>
+
+                <p>Напишите IIFE-функцию, которая возвращает новый массив, содержащий квадраты чисел из исходного
+                    массива.</p>
+                <blockquote>Посмотреть код</blockquote>
+                <blockquote>
+                    <div class="main__wrapper-box_grey">
+                        <p>const arr = [1, 2, 3, 4, 5];</p>
+                        <p>(function (arr) {</p>
+                        <blockquote>return arr.map(function (num) {</blockquote>
+                        <blockquote>
+                            <blockquote>return num * num;</blockquote>
+                        </blockquote>
+                        <blockquote>});</blockquote>
+                        <p>})(arr);</p>
+                    </div>
+                </blockquote>
+                <hr class="hr">
+
+                <h2>Задание 8.4</h2>
+
+                <p>Напишите IIFE-функцию, которая принимает объект со свойствами width и height, и возвращает площадь
+                    прямоугольника, вычисленную по формуле width * height.</p>
+                <blockquote>Посмотреть код</blockquote>
+                <blockquote>
+                    <div class="main__wrapper-box_grey">
+                        <p>const rectangle = { width: 5, height: 10 };</p>
+                        <p>(function (rect) {</p>
+                        <blockquote>return rect.width * rect.height;</blockquote>
+                        <p>})(rectangle);</p>
+                    </div>
+                </blockquote>
 
             </div>
             <!-- кнопки -->
